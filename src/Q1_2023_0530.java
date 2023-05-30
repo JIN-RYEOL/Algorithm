@@ -34,26 +34,24 @@
 */
 
 
-public class Q1_2023_0530{
-public static void main(String[] args) {
+public class Q1_2023_0530 {
+    public static void main(String[] args) {
         int answer = 0;
-        int temp = 0;
         int count = 0;
 
 
-        for(int i=13; i<=17; i++){
-        for(int j=1; j<=i; j++){
-        if(i%j == 0){
-        temp += j;
-        count++;
-        }
-        } // 안쪽 for
-        if(count % 2 == 0){
-        answer += i;
-        }else{
-        answer -= i;
-        }
+        for (int i = 13; i <= 17; i++) {
+            for (int j = 1; j <= i; j++) {
+                if (i % j == 0) {
+                    count++;
+                }
+            } // 안쪽 for
+            if (count % 2 == 0) {
+                answer += i;
+            } else {
+                answer -= i;
+            }
         } // 바깥쪽 for
-        return ;
-        }
-        }
+        return;
+    }
+}
