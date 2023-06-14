@@ -31,14 +31,15 @@ public class Q9_2023_0614 {
     */
 
     public static void main(String[] args) {
-        //Solution s = new Solution();
-        //System.out.println(s.solution(1));
-        int a = 25;
-        System.out.println("10진수 -> 3진수");
-        System.out.println( Integer.toString(a,3).getClass().getName() );
+        Solution s = new Solution();
+        System.out.println(s.solution(45));
+
+        //int a = 25;
+        //System.out.println("10진수 -> 3진수");
+        //System.out.println( Integer.toString(a,3).getClass().getName() );
     }
 
-    class Solution {
+    static class Solution {
         public int solution(int n) {
             int answer = 0;
             StringBuilder sb = new StringBuilder();
