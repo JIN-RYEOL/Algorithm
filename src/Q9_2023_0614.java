@@ -49,7 +49,7 @@ public class Q9_2023_0614 {
                 sb.append(a.charAt(i));
             }
 
-            return Integer.parseInt(sb.toString(),3);
+            return Integer.parseInt(sb.toString(),3); // 3진법 -> 10진법
         }
     }
 }
